@@ -1,0 +1,9 @@
+****************************
+Configurar archivo Conexion
+****************************
+
+1.Ingresar al modulo: /FerreMax/database/Conexion.py
+
+2.Ingresar credenciales de su BD en:
+self.usuario=""
+self.contrasena=""  <----Contraseña

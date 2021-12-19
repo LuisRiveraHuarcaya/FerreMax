@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_principal</class>
+ <widget class="QMainWindow" name="frm_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ventana Principal</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1500</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>668</width>
+       <height>82</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="6">
+       <widget class="QToolButton" name="btn_mantenimiento">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Mantenimiento</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QToolButton" name="btn_proveedores">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Proveedores</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/camion.png</normaloff>../resource/image/camion.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="btn_almacen">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Almacen</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/almacen.png</normaloff>../resource/image/almacen.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="btn_caja">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Caja</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/caja_venta.png</normaloff>../resource/image/caja_venta.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QToolButton" name="btn_empleados">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Empleados</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/gerente.png</normaloff>../resource/image/gerente.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="btn_productos">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Productos</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/caja.png</normaloff>../resource/image/caja.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QToolButton" name="btn_clientes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Clientes</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../resource/image/equipo.png</normaloff>../resource/image/equipo.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>250</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../resource/image/logo_ferremax.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Sesion">
+    <property name="title">
+     <string>&amp;Usuario</string>
+    </property>
+    <addaction name="action_Cerrar_Sesion"/>
+    <addaction name="actionCerrar_sesion"/>
+    <addaction name="actionSalir_y_cerrar_sesion"/>
+   </widget>
+   <widget class="QMenu" name="menu_Clientes">
+    <property name="title">
+     <string>&amp;Clientes</string>
+    </property>
+    <addaction name="actionConsultar_cliente"/>
+    <addaction name="actionReporte_de_clientes"/>
+    <addaction name="actionMantenimiento_clientes"/>
+   </widget>
+   <widget class="QMenu" name="menu_Producto">
+    <property name="title">
+     <string>&amp;Producto</string>
+    </property>
+    <addaction name="actionConsultar_producto"/>
+    <addaction name="actionReporte_de_productos"/>
+    <addaction name="actionMantenimiento_producto"/>
+   </widget>
+   <widget class="QMenu" name="menu_Caja">
+    <property name="title">
+     <string>&amp;Caja</string>
+    </property>
+    <addaction name="actionGenerar_venta_2"/>
+    <addaction name="actionGenerar_compra"/>
+    <addaction name="actionMantenimiento_caja"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ventas">
+    <property name="title">
+     <string>&amp;Ventas</string>
+    </property>
+    <addaction name="actionConsultar_ventas"/>
+    <addaction name="actionReporte_de_ventas"/>
+    <addaction name="actionMantenimiento_ventas"/>
+   </widget>
+   <widget class="QMenu" name="menu_Mantenimiento">
+    <property name="title">
+     <string>Sistema</string>
+    </property>
+    <widget class="QMenu" name="menuMantenimiento">
+     <property name="title">
+      <string>Mantenimiento</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+     </property>
+     <widget class="QMenu" name="menuBase_de_datos">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>176</y>
+        <width>132</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Base de datos</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../resource/image/database.png</normaloff>../resource/image/database.png</iconset>
+      </property>
+      <addaction name="actionCrear_respaldo_2"/>
+      <addaction name="actionImportar_BD_2"/>
+     </widget>
+     <addaction name="menuBase_de_datos"/>
+     <addaction name="actionPersonalizar"/>
+    </widget>
+    <addaction name="menuMantenimiento"/>
+    <addaction name="actionManuales"/>
+    <addaction name="actionInfo"/>
+   </widget>
+   <addaction name="menu_Sesion"/>
+   <addaction name="menu_Clientes"/>
+   <addaction name="menu_Producto"/>
+   <addaction name="menu_Caja"/>
+   <addaction name="menu_Ventas"/>
+   <addaction name="menu_Mantenimiento"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset>
+     <normaloff>Imagenes/iniciar-sesion.png</normaloff>Imagenes/iniciar-sesion.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Nueva Sesion</string>
+   </property>
+  </action>
+  <action name="action_Cerrar_Sesion">
+   <property name="icon">
+    <iconset>
+     <normaloff>Imagenes/cerrar-sesion.png</normaloff>Imagenes/cerrar-sesion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Detalles</string>
+   </property>
+  </action>
+  <action name="action_Info">
+   <property name="text">
+    <string>Marcar asistencia</string>
+   </property>
+  </action>
+  <action name="action_Importar_BD">
+   <property name="text">
+    <string>Importar BD</string>
+   </property>
+  </action>
+  <action name="submenu_personalizar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/paleta-de-color.png</normaloff>../resource/image/paleta-de-color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Personalizar</string>
+   </property>
+  </action>
+  <action name="actionCrear_respaldo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/descargar.png</normaloff>../resource/image/descargar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exportar BD</string>
+   </property>
+  </action>
+  <action name="actionImportar_BD">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/settings.png</normaloff>../resource/image/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Importar BD</string>
+   </property>
+  </action>
+  <action name="actionReportar_incidencias">
+   <property name="text">
+    <string>Reportar incidencias</string>
+   </property>
+  </action>
+  <action name="actionCerrar_sesion">
+   <property name="text">
+    <string>Cerrar sesion</string>
+   </property>
+  </action>
+  <action name="actionSalir_y_cerrar_sesion">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionCrear_back_up">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/settings.png</normaloff>../resource/image/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Crear back-up</string>
+   </property>
+  </action>
+  <action name="actionConsultar_ventas">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/lupa.png</normaloff>../resource/image/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="actionMantenimiento_ventas">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_ventas">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/ebook.png</normaloff>../resource/image/ebook.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reportes</string>
+   </property>
+  </action>
+  <action name="actionConsultar_producto">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/lupa.png</normaloff>../resource/image/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="actionMantenimiento_producto">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_productos">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/ebook.png</normaloff>../resource/image/ebook.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reporte</string>
+   </property>
+  </action>
+  <action name="actionGenerar_venta">
+   <property name="text">
+    <string>Generar venta</string>
+   </property>
+  </action>
+  <action name="actionConsultar_cliente">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/lupa.png</normaloff>../resource/image/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="actionMantenimiento_clientes">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_clientes">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/ebook.png</normaloff>../resource/image/ebook.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reportes</string>
+   </property>
+  </action>
+  <action name="actionGenerar_venta_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/mas.png</normaloff>../resource/image/mas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nueva venta</string>
+   </property>
+  </action>
+  <action name="actionMantenimiento_caja">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/caja-de-herramientas.png</normaloff>../resource/image/caja-de-herramientas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionGenerar_compra">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/mas.png</normaloff>../resource/image/mas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nueva compra</string>
+   </property>
+  </action>
+  <action name="actionPersonalizar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/paleta-de-color.png</normaloff>../resource/image/paleta-de-color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Personalizar</string>
+   </property>
+  </action>
+  <action name="actionCrear_respaldo_2">
+   <property name="text">
+    <string>Crear respaldo</string>
+   </property>
+  </action>
+  <action name="actionImportar_BD_2">
+   <property name="text">
+    <string>Importar BD</string>
+   </property>
+  </action>
+  <action name="actionManuales">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/manual.png</normaloff>../resource/image/manual.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manuales</string>
+   </property>
+  </action>
+  <action name="actionInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/image/informacion.png</normaloff>../resource/image/informacion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

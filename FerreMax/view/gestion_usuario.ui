@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion Usuarios</string>
+  </property>
+  <widget class="QTabWidget" name="pantalla_tab">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>641</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Usuario</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_usuarios">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>611</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>221</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="2">
+        <widget class="QCheckBox" name="chbx_activo">
+         <property name="text">
+          <string>Activo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_dni"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>F. Nacimiento:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Apellidos:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Nombres:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Sexo:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>DNI:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QDateEdit" name="date_nacimiento_usuario"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLineEdit" name="txt_nombres"/>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QLineEdit" name="txt_apellidos"/>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QComboBox" name="cbx_sexo_usuario">
+         <item>
+          <property name="text">
+           <string>Femenino</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Masculino</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+      <zorder>chbx_activo</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_2</zorder>
+      <zorder>label</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_9</zorder>
+      <zorder>date_nacimiento_usuario</zorder>
+      <zorder>txt_nombres</zorder>
+      <zorder>txt_apellidos</zorder>
+      <zorder>cbx_sexo_usuario</zorder>
+      <zorder>txt_dni</zorder>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Rol:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Usuario:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Contraseña:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="txt_usuario"/>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="txt_password"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="txt_telefono"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txt_email"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QComboBox" name="cbx_rol_usuario">
+         <item>
+          <property name="text">
+           <string>Administrador</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Caja</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Vendedor</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Teléfono:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>239</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_crear_usuario">
+         <property name="text">
+          <string>Crear</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_modificar_usuario">
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_eliminar_usuario">
+         <property name="text">
+          <string>Eliminar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>10</y>
+        <width>161</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="lbl_icono_usuario">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>141</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../resource/image/hombre.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>180</y>
+        <width>158</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Insertar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="text">
+          <string>Ver</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QComboBox" name="cbx_buscar_usuario">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>230</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txt_buscar_usuario">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>230</y>
+       <width>157</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tabla_usuarios">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>611</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>DNI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nombres</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Apellidos</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sexo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>F. Nacimiento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Telefono</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Usuario</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Rol</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btn_buscar_usuario">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buscar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Roles y permisos</string>
+    </attribute>
+    <widget class="QTableWidget" name="tabla_roles">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>611</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Rol</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Descripcion</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Permisos</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLineEdit" name="txt_buscar_rol">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>240</y>
+       <width>157</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbx_buscar_rol">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>240</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rol</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btn_buscar_rol">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>240</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buscar</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_roles">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>601</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>239</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="btn_crear_rol">
+         <property name="text">
+          <string>Crear</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_modificar_rol">
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_eliminar_rol">
+         <property name="text">
+          <string>Eliminar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txt_nombre_rol"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Descripcion:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Rol:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QTextEdit" name="txt_descripcion_rol"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_id_rol"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>261</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="4" column="1">
+        <widget class="QComboBox" name="cbx_permisos_productos">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="cbx_permisos_almacen">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="cbx_permisos_clientes">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="cbx_permisos_proveedores_2">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="cbx_permisos_empleados">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QCheckBox" name="chk_ventas">
+         <property name="text">
+          <string>Ventas</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="chk_empleados">
+         <property name="text">
+          <string>Empleados</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="chk_clientes">
+         <property name="text">
+          <string>Clientes</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="chk_proveedores">
+         <property name="text">
+          <string>Proveedores</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="chk_productos">
+         <property name="text">
+          <string>Productos</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="chk_almacen">
+         <property name="text">
+          <string>Almacen</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QCheckBox" name="chk_mantenimiento">
+         <property name="text">
+          <string>Mantenimiento</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QComboBox" name="cbx_permisos_ventas">
+         <item>
+          <property name="text">
+           <string>Leer</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Leer y escribir</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
